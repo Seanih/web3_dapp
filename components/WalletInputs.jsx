@@ -1,6 +1,6 @@
 import { Input, Select, CryptoLogos } from '@web3uikit/core';
 
-function WalletInputs({ chain, setChain, wallet, setWallet, walletRef }) {
+function WalletInputs({ setChain, wallet, setWallet }) {
 	return (
 		<div className='header'>
 			<div className='title'>
@@ -29,7 +29,6 @@ function WalletInputs({ chain, setChain, wallet, setWallet, walletRef }) {
 			</div>
 			<div className='walletInputs'>
 				<Input
-					ref={walletRef}
 					id='wallet'
 					label='Wallet Address'
 					labelBgColor='rgb(33,33,38)'

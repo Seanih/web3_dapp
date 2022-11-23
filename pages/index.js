@@ -35,7 +35,8 @@ export default function Home() {
 					setChain={setChain}
 					wallet={wallet}
 					setWallet={setWallet}
-					walletRef={walletRef}
+					//!can't use useRef with web3uikit 
+					//walletRef={walletRef}
 				/>
 				<div className='content'>
 					<div className='walletInfo'>
