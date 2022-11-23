@@ -1,26 +1,117 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.header {
+	height: 80px;
+	width: 100vw;
+	display: flex;
+	justify-content: flex-start;
+	background-color: rgb(33, 33, 38);
+	border-bottom: 1px solid rgb(121, 121, 121);
+	padding: 5px 50px;
+	align-items: center;
+}
+
+.title {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	gap: 25px;
+}
+
+.walletInputs {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	align-items: center;
+	gap: 25px;
+}
+
+.content {
+	height: 100%;
+	margin: 0;
+	padding: 100px;
+	background: linear-gradient(
+		180deg,
+		rgba(142, 211, 182, 0.3) 0%,
+		rgba(36, 20, 0, 0) 50%
+	);
+}
+
+.walletInfo {
+	display: flex;
+	justify-content: space-between;
+}
+
+.totalValue {
+	width: 350px;
+	height: 150px;
+	padding: 10px 30px;
+	border-radius: 20px;
+	background-color: rgba(33, 33, 38, 0.6);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.tabHeading {
+	font-size: 30px;
+	font-weight: bold;
+	margin: 20px 0px;
+	align-items: center;
+	display: flex;
+	gap: 20px;
+}
+
+.tabHeading:hover {
+	cursor: pointer;
+}
+
+.filters {
+	display: flex;
+	gap: 20px;
+	margin: 30px 0px;
+}
+
+.nftInfo {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	gap: 5px;
+	background-color: rgb(42, 42, 47);
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.nftList {
+	display: flex;
+	justify-content: flex-start;
+	gap: 40px;
+	flex-wrap: wrap;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+	html {
+		color-scheme: dark;
+	}
+	body {
+		color: white;
+		background: black;
+	}
 }
